@@ -1,4 +1,4 @@
-package com.example.rxjava;
+package com.example.rxjava.models;
 
 import androidx.room.Dao;
 import androidx.room.Entity;

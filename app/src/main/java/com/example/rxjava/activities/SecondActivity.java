@@ -1,10 +1,15 @@
-package com.example.rxjava;
+package com.example.rxjava.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.rxjava.R;
+import com.example.rxjava.databases.TestDb;
+import com.example.rxjava.itnterfaces.BooksDao;
+import com.example.rxjava.models.Book;
 
 public class SecondActivity extends AppCompatActivity {
     private Button addBtn;

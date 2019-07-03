@@ -1,8 +1,10 @@
-package com.example.rxjava;
+package com.example.rxjava.itnterfaces;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.example.rxjava.models.Book;
 
 import java.util.List;
 

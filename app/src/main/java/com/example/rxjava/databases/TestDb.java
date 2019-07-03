@@ -1,10 +1,13 @@
-package com.example.rxjava;
+package com.example.rxjava.databases;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import com.example.rxjava.itnterfaces.BooksDao;
+import com.example.rxjava.models.Book;
 
 @Database(entities = Book.class, version = 1, exportSchema = false)
 public abstract class TestDb extends RoomDatabase {

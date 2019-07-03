@@ -1,14 +1,18 @@
-package com.example.rxjava;
+package com.example.rxjava.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.rxjava.R;
+import com.example.rxjava.adapters.TestAdapter;
+import com.example.rxjava.databases.TestDb;
+import com.example.rxjava.itnterfaces.BooksDao;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
@@ -50,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 }));
 
 
-        Pres pres = new Pres();
-        Pres pres_2 = new Pres();
-
-        pres.getData().subscribe(o -> Log.d("Test", "Item : " + o));
+//        Pres pres = new Pres();
+//        Pres pres_2 = new Pres();
+//
+//        pres.getData().subscribe(o -> Log.d("Test", "Item : " + o));
     }
 
     @Override
